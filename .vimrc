@@ -21,6 +21,10 @@ set tabstop=4 " visible width of tabs
 set shiftwidth=4 " number of spaces to use for (un)indent 
 set softtabstop=4 " edit as if the tabs are 4 characters
 
+" Enable clang-format
+map <C-K> :pyf /usr/share/clang/clang-format.py<cr>
+imap <C-K> <c-o>:pyf /usr/share/clang/clang-format.py<cr>
+
 syntax on
 
 autocmd FileType cpp highlight OverLength ctermbg=red ctermfg=white guibg=#592929
